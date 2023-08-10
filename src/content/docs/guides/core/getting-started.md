@@ -3,9 +3,6 @@ title: Getting Started
 description: Instructions for getting started with OpenDAoC.
 ---
 
-OpenDAoC is a .Net 6.0 application that emulates a DAoC server.  
-OpenDAOC is provided as source code and can be compiled and run on Windows or Linux. It is also provided as a Docker container that can be run on any platform that supports Docker.
-
 The easiest way to get started is to use the Docker container, but this guide will also cover how to compile and run the server on Linux.
 
 ## Docker
