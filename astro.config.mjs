@@ -11,6 +11,7 @@ export default defineConfig({
 			logo: {
 				src: './src/assets/Logo.png',
 			},
+			favicon: './src/assets/favicon.ico',
 			social: {
 				github: 'https://github.com/OpenDAoC',
 				discord: 'https://discord.gg/RHqzyt8KyC',
