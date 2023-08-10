@@ -1,51 +1,26 @@
-# Starlight Starter Kit: Basics
+# OpenDAoC - The Website
 
-```
-npm create astro@latest -- --template starlight
-```
+This is the source code for the OpenDAoC website.  
+It is built using [Astro](https://astro.build/) and [Starlight](https://starlight.astro.build/).
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/basics)
+The website goal is to provide a comprehensive guide to OpenDAoC and its accompanying tools.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+The website repository is public to allow the community to contribute to the documentation.
 
-## 🚀 Project Structure
+## Contributing
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+If you want to contribute to the website, please fork the repository and submit a pull request.
 
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   ├── docs/
-│   │   └── config.ts
-│   └── env.d.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
+## Running the website locally
+
+To run the website locally, you will need to install [Node.js](https://nodejs.org/en/).
+
+Once Node.js is installed, you can run the following commands:
+
+```bash
+npm install && npm run dev
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+## License
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
-
-Static assets, like favicons, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+The OpenDAoC website is licensed under the [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.en.html) license.
