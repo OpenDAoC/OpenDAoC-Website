@@ -3,24 +3,36 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://new.opendaoc.com',
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'OpenDAoC',
+			lastUpdated: true,
+			logo: {
+				src: './src/assets/Logo.png',
+			},
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/OpenDAoC',
+				discord: 'https://discord.gg/RHqzyt8KyC',
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Docs',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', link: '/guides/example/' },
+						{ label: 'What is OpenDAoC', link: '/guides/what-is-opendaoc/' },
+						{ label: 'Motivation', link: '/guides/motivation/'},
+						{ label: 'Getting Started', link: '/guides/core/getting-started/' },
+						{ label: 'Manual Setup', link: '/guides/core/manual-setup/' },
 					],
 				},
 				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
 				},
+			],
+			customCss: [
+				'./src/styles/custom.css',
 			],
 		}),
 	],
