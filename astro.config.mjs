@@ -9,7 +9,7 @@ export default defineConfig({
 			title: 'OpenDAoC',
 			lastUpdated: true,
 			logo: {
-				src: './src/assets/Logo.png',
+				src: './src/assets/Logo.svg',
 			},
 			favicon: './src/assets/favicon.ico',
 			social: {
