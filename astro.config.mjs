@@ -18,17 +18,33 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Docs',
+					label: 'About',
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'What is OpenDAoC', link: '/guides/what-is-opendaoc/' },
 						{ label: 'Motivation', link: '/guides/motivation/'},
+					],
+				},
+				{
+					label: 'Core',
+					items: [
 						{ label: 'Getting Started', link: '/guides/core/getting-started/' },
 						{ label: 'Manual Setup', link: '/guides/core/manual-setup/' },
 					],
 				},
 				{
+					label: 'Launcher',
+					collapsed: true,
+					autogenerate: { directory: 'launcher' },
+				},
+				{
+					label: 'Account Manager',
+					collapsed: true,
+					autogenerate: { directory: 'account-manager' },
+				},
+				{
 					label: 'Reference',
+					collapsed: true,
 					autogenerate: { directory: 'reference' },
 				},
 			],
