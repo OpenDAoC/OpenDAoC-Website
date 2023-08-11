@@ -34,8 +34,11 @@ export default defineConfig({
 						{ label: 'Getting Started', link: '/docs/core/getting-started/' },
 						{ label: 'Docker Setup', link: '/docs/core/docker-setup/' },
 						{ label: 'Manual Setup', link: '/docs/core/manual-setup/' },
+						{ label: 'APIs', link: '/docs/core/api/' },
 					],
 				},
+				{ label: 'Database', link: '/docs/database' },
+				{ label: 'Client', link: '/docs/client' },
 				{
 					label: 'Launcher',
 					collapsed: true,
