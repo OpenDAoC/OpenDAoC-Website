@@ -1,0 +1,21 @@
+---
+title: Getting Started
+description: Instructions for getting started with OpenDAoC.
+---
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+
+
+OpenDAoC requires .Net 6.0, a database, and a web server if you plan on using the APIs.  
+The easiest way to get started is to use Docker but if you prefer to install manually, you can follow the manual setup instructions.
+
+<CardGrid>
+	<LinkCard 
+  title="Docker Setup" 
+  description="Step-by-step instructions for setting up OpenDAoC using Docker."
+  href="../docker-setup/"
+  />
+	<LinkCard 
+  title="Manual Setup" 
+  description="Step-by-step instructions for setting up OpenDAoC manually."
+  href="../manual-setup/" />
+</CardGrid>
