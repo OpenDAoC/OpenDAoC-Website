@@ -120,7 +120,10 @@ The first time you start the stack, the MySQL container will create the database
 
 ### Updating the database
 
-The dummy database that is included with the OpenDAoC image is not updated very often.
+The `docker-compose.yml` file above uses a dummy database to create the required database and tables when the container is started for the first time.  
+While intended for bootstrapping your server, the dummy database is just a minimal version and does not contain all mobs, items, spells, etc.
+
+Once you have completed the initial setup, you can replace the dummy database with our complete database as covered in the [Database](/database/) section.
 
 ### Updating the OpenDAoC image
 
