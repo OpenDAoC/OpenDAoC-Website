@@ -1,11 +1,8 @@
 ---
-title: Getting Started
-description: Instructions for getting started with OpenDAoC.
+title: Docker Setup
+description: Instructions for getting started with OpenDAoC with Docker.
 ---
 
-The easiest way to get started is to use the Docker container, but this guide will also cover how to compile and run the server on Linux.
-
-## Docker
 
 :::caution
 While the Docker container can be run on any platform that supports Docker, we will assume that you are running Docker on a Debian based Linux distribution such as Ubuntu.

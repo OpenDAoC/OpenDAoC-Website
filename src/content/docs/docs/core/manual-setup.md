@@ -3,7 +3,7 @@ title: Manual Setup
 description: Instructions for getting started with OpenDAoC without using Docker.
 ---
 
-The easiest way to get started is to use the Docker container as described in the [Getting Started](/docs/guides/getting-started) guide, but this guide will also cover how to compile and run the server on Linux.
+The easiest way to get started is to use the Docker container as described in the [Getting Started](/docs/docs/getting-started) guide, but this guide will also cover how to compile and run the server on Linux.
 
 ## Setting up the environment
 

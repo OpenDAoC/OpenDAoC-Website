@@ -9,4 +9,4 @@ OpenDAOC is provided as source code and can be compiled and run on Windows or Li
 Originally, we were a fork of the [Dawn of Light](https://github.com/Dawn-of-Light) project and it was known as Atlas.  
 However, we have since diverged from the original project and have rewritten most of the codebase.
 
-To learn more about the our motivations, please see [this page](/guides/motivation).
+To learn more about the our motivations, please see [this page](/docs/motivation).

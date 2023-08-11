@@ -8,6 +8,7 @@ export default defineConfig({
 		starlight({
 			title: 'OpenDAoC',
 			lastUpdated: true,
+			pagination: false,
 			logo: {
 				src: './src/assets/Logo.svg',
 			},
@@ -17,19 +18,22 @@ export default defineConfig({
 				discord: 'https://discord.gg/RHqzyt8KyC',
 			},
 			sidebar: [
+				{ label: 'Home', link: '/' },
+				{ label: 'Documentation Home', link: '/docs' },
 				{
 					label: 'About',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'What is OpenDAoC', link: '/guides/what-is-opendaoc/' },
-						{ label: 'Motivation', link: '/guides/motivation/'},
+						{ label: 'What is OpenDAoC', link: '/docs/what-is-opendaoc/' },
+						{ label: 'Motivation', link: '/docs/motivation/'},
 					],
 				},
 				{
 					label: 'Core',
 					items: [
-						{ label: 'Getting Started', link: '/guides/core/getting-started/' },
-						{ label: 'Manual Setup', link: '/guides/core/manual-setup/' },
+						{ label: 'Getting Started', link: '/docs/core/getting-started/' },
+						{ label: 'Docker Setup', link: '/docs/core/docker-setup/' },
+						{ label: 'Manual Setup', link: '/docs/core/manual-setup/' },
 					],
 				},
 				{
@@ -54,6 +58,6 @@ export default defineConfig({
 		}),
 	],
 
-	// Process images with sharp: https://docs.astro.build/en/guides/assets/#using-sharp
+	// Process images with sharp: https://docs.astro.build/en/docs/assets/#using-sharp
 	image: { service: { entrypoint: 'astro/assets/services/sharp' } },
 });
