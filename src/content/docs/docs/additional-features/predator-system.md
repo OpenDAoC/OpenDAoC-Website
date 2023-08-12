@@ -14,6 +14,6 @@ This is a **solo-only** activity.
 
 You are tasked with the objective of hunting down a random player of an opposing realm. Similarly, you are likewise chosen as a hunt target for another random player, so stay on your toes! Hunters are given some details regarding their prey via /predator prey, including: player name, race, and zone location.
 
-Killing your prey will reward you with a substantial amount of RPs and Atlas Orbs. Killing your prey automatically re-enters you in the queue with a new target.
+Killing your prey will reward you with a substantial amount of RPs and Orbs. Killing your prey automatically re-enters you in the queue with a new target.
 
 Joining a group, quitting the game, leaving RvR zones, or typing /predator abandon will remove you from the hunt.

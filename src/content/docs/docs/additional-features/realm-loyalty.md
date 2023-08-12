@@ -50,7 +50,7 @@ Scaling rewards provide a dynamic benefit based on a player's built-up of loyalt
 ### Scaling Rewards
 Below are all the maximum rewards available with realm loyalty upon hitting the 30-day loyalty bonus cap:
 - +25% XP from all sources
-- +20% Atlas Orbs from all sources
+- +20% Orbs from all sources
 - 30-second reduction in XP Item global cooldown timer
 - 50% out-of-class ROG chance (detailed below)
 - Up to 20% bonus chance to get orbs when killing some epic creatures

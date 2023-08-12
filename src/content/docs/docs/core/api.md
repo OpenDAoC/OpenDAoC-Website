@@ -200,7 +200,7 @@ Detailed information about a player.
 {
   "name": "Player",
   "lastname": "Lastname",
-  "guild": "Atlas",
+  "guild": "OpenDAoC",
   "realm": "Hibernia",
   "realmID": 3,
   "race": "Lurikeen",
