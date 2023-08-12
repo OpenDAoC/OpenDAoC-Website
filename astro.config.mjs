@@ -37,9 +37,9 @@ export default defineConfig({
 						{ label: 'APIs', link: '/docs/core/api/' },
 					],
 				},
-				{ label: 'Database', link: '#' },
-				{ label: 'Client', link: '#' },
-				{ label: 'Launcher', link: '#' },
+				{ label: 'Database', link: '/docs/database' },
+				{ label: 'Client', link: '/docs/client' },
+				{ label: 'Launcher', link: '/docs/launcher' },
 				{
 					label: 'Account Manager',
 					collapsed: true,
