@@ -39,7 +39,11 @@ export default defineConfig({
 				},
 				{ label: 'Database', link: '/docs/database' },
 				{ label: 'Client', link: '/docs/client' },
-				{ label: 'Launcher', link: '/docs/launcher' },
+				{ 
+					label: 'Launcher',
+					collapsed: true,
+					autogenerate: { directory: 'launcher' },
+				},
 				{
 					label: 'Account Manager',
 					collapsed: true,
