@@ -3,7 +3,7 @@ title: Manual Setup
 description: Instructions for getting started with OpenDAoC without using Docker.
 ---
 
-The easiest way to get started is to use the Docker container as described in the [Getting Started](/docs/docs/getting-started) guide, but this guide will also cover how to compile and run the server on Linux.
+The easiest way to get started is to use the Docker container as described in the [Docker Setup][1] guide, but this guide will also cover how to compile and run the server on Linux.
 
 ## Setting up the environment
 
@@ -42,7 +42,7 @@ sudo apt-get update && \
 sudo apt-get install -y dotnet-sdk-6.0
 ```
 
-Please see the [Microsoft documentation](https://learn.microsoft.com/en-us/dotnet/core/install/linux) for instructions on how to install the .Net 6.0 SDK on other platforms.
+Please see the [Microsoft documentation][2] for instructions on how to install the .Net 6.0 SDK on other platforms.
 
 ### Installing MariaDB
 
@@ -105,7 +105,7 @@ To create the user and database, perform the following steps from the Terminal:
 
 ## Cloning the Repository
 
-The OpenDAoC repository can be cloned from [GitHub][1].  
+The OpenDAoC repository can be cloned from [GitHub][3].  
 In this example, we will be cloning "OpenDAoC-Core" to the "/home/opendaoc/OpenDAoC-Core" directory.
 
 To clone the repository, run the following command from the Terminal:
@@ -140,7 +140,7 @@ The last step before running the server is to alter the `serverconfig.xml` file 
 3. Within the `RegionIP` tags, change the value `0.0.0.0` to one of these:
    - To test locally, enter `127.0.0.1`.
    - To test over LAN, enter your machine's IP address (use the Terminal command `ip a`, and it should start with `192`).
-   - To test outside your network, [enter your public IP address](https://api.ipify.org).
+   - To test outside your network, [enter your public IP address][4].
 4. Configure the database access as per your own configuration.
    
 Now you're ready to build and run the server!
@@ -169,4 +169,7 @@ You will need to forward the ports (`10300` and `10301` by default) for the serv
 Congratulations!  
 You're now running an instance of OpenDAoC.
 
-[1]: https://github.com/OpenDAoC/
+[1]: /docs/core/docker-setup
+[2]: https://learn.microsoft.com/en-us/dotnet/core/install/linux
+[3]: https://github.com/OpenDAoC/
+[4]: https://api.ipify.org
