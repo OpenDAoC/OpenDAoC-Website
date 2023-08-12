@@ -50,9 +50,19 @@ export default defineConfig({
 					autogenerate: { directory: 'account-manager' },
 				},
 				{
-					label: 'Reference',
+					label: 'Additional Features',
 					collapsed: true,
-					autogenerate: { directory: 'reference' },
+					items: [
+						{ label: 'Index', link: '/docs/additional-features/' },
+						{ label: 'Bounty System', link: '/docs/additional-features/bounty-system/' },
+						{ label: 'Conquest System', link: '/docs/additional-features/conquest-system/' },
+						{ label: 'Predator System', link: '/docs/additional-features/predator-system/' },
+						{ label: 'Realm Loyalty', link: '/docs/additional-features/realm-loyalty/' },
+						{ label: 'Recurring Quests', link: '/docs/additional-features/recurring-quests/' },
+						{ label: 'XP Items', link: '/docs/additional-features/xp-items/' },
+
+
+					],
 				},
 			],
 			customCss: [
