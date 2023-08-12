@@ -34,22 +34,32 @@ export default defineConfig({
 						{ label: 'Getting Started', link: '/docs/core/getting-started/' },
 						{ label: 'Docker Setup', link: '/docs/core/docker-setup/' },
 						{ label: 'Manual Setup', link: '/docs/core/manual-setup/' },
+						{ label: 'APIs', link: '/docs/core/api/' },
 					],
 				},
-				{
-					label: 'Launcher',
-					collapsed: true,
-					autogenerate: { directory: 'launcher' },
-				},
+				{ label: 'Database', link: '#' },
+				{ label: 'Client', link: '#' },
+				{ label: 'Launcher', link: '#' },
 				{
 					label: 'Account Manager',
 					collapsed: true,
 					autogenerate: { directory: 'account-manager' },
 				},
 				{
-					label: 'Reference',
+					label: 'Additional Features',
 					collapsed: true,
-					autogenerate: { directory: 'reference' },
+					items: [
+						{ label: 'Index', link: '/docs/additional-features/' },
+						{ label: 'Bounty System', link: '/docs/additional-features/bounty-system/' },
+						{ label: 'Conquest System', link: '/docs/additional-features/conquest-system/' },
+						{ label: 'Cosmetic Rewards', link: '/docs/additional-features/cosmetic-rewards/' },
+						{ label: 'Predator System', link: '/docs/additional-features/predator-system/' },
+						{ label: 'Realm Loyalty', link: '/docs/additional-features/realm-loyalty/' },
+						{ label: 'Recurring Quests', link: '/docs/additional-features/recurring-quests/' },
+						{ label: 'XP Items', link: '/docs/additional-features/xp-items/' },
+
+
+					],
 				},
 			],
 			customCss: [
