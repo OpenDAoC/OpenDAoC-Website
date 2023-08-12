@@ -11,10 +11,10 @@ While the Docker container can be run on any platform that supports Docker, we w
 ### Prerequisites
 
 To run the OpenDAoC Docker container you will need to have Docker and Docker Compose installed on your system.  
-For instructions on how to install Docker and Docker Compose on your system, please see the [Docker documentation](https://docs.docker.com/get-docker/).  
+For instructions on how to install Docker and Docker Compose on your system, please see the [Docker documentation][1].  
 
 :::tip[Suggested Utilities]
-While not required, we suggest installing [Portainer CE](https://docs.portainer.io/start/install-ce) to manage your Docker containers.  
+While not required, we suggest installing [Portainer CE][2] to manage your Docker containers.  
 :::
 
 ### Docker Compose
@@ -123,7 +123,7 @@ The first time you start the stack, the MySQL container will create the database
 The `docker-compose.yml` file above uses a dummy database to create the required database and tables when the container is started for the first time.  
 While intended for bootstrapping your server, the dummy database is just a minimal version and does not contain all mobs, items, spells, etc.
 
-Once you have completed the initial setup, you can replace the dummy database with our complete database as covered in the [Database](/database/) section.
+Once you have completed the initial setup, you can replace the dummy database with our complete database as covered in the [Database][3] section.
 
 ### Updating the OpenDAoC image
 
@@ -132,8 +132,8 @@ We release updated OpenDAoC images frequently.
 It is recommended that you update the OpenDAoC image on a regular basis to ensure that you are running the latest version and are benefiting from the latest bug fixes and features.
 
 :::tip[Watchtower]
-If you are running [Watchtower](https://containrrr.dev/watchtower/) to automatically update your Docker containers, we suggest excluding the OpenDAoC container as it would interrupt gameplay.  
-Please see the [Watchtower documentation](https://containrrr.dev/watchtower/Arguments/) for instructions on how to exclude containers from automatic updates.
+If you are running [Watchtower][4] to automatically update your Docker containers, we suggest excluding the OpenDAoC container as it would interrupt gameplay.  
+Please see the [Watchtower documentation][5] for instructions on how to exclude containers from automatic updates.
 :::
 
 To update the OpenDAoC Docker image, you will need to stop the container, pull the latest image and then restart the container.
@@ -155,3 +155,9 @@ docker start gameserver
 ```
 
 The server will now be running the latest version of OpenDAoC.
+
+[1]: https://docs.docker.com/get-docker/
+[2]: https://docs.portainer.io/start/install-ce
+[3]: /docs/database/
+[4]: https://containrrr.dev/watchtower/
+[5]: https://containrrr.dev/watchtower/Arguments/
