@@ -12,7 +12,7 @@ export default defineConfig({
 			logo: {
 				src: './src/assets/Logo.svg',
 			},
-			favicon: './src/assets/favicon.ico',
+			favicon: './favicon.svg',
 			social: {
 				github: 'https://github.com/OpenDAoC',
 				discord: 'https://discord.gg/RHqzyt8KyC',
