@@ -1,5 +1,5 @@
 ---
-title: Manual Setup
+title: Manual Setup - OpenDAoC
 description: Instructions for getting started with OpenDAoC without using Docker.
 ---
 

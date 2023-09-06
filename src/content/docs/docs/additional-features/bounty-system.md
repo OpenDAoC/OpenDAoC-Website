@@ -56,8 +56,8 @@ All players can use `/bounty list` to show the bounties currently active and to 
 - `/bounty list`
   Shows the window with the currently active bounties in the Realm
   
-  ![Active Bounties](../../../../assets/images/bounty-system-1.png "Active Bounties")
-  ![Bounty Warning](../../../../assets/images/bounty-system-2.png "Bounty Warning")
+  ![Active Bounties](/src/assets/images/additional-features/bounty-system-1.png "Active Bounties")
+  ![Bounty Warning](/src/assets/images/additional-features/bounty-system-2.png "Bounty Warning")
   
 ## Examples
   

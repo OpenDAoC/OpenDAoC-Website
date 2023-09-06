@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig, squooshImageService } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
@@ -12,7 +12,7 @@ export default defineConfig({
 			logo: {
 				src: './src/assets/Logo.svg',
 			},
-			favicon: './src/assets/favicon.ico',
+			favicon: './favicon.svg',
 			social: {
 				github: 'https://github.com/OpenDAoC',
 				discord: 'https://discord.gg/RHqzyt8KyC',
@@ -22,6 +22,7 @@ export default defineConfig({
 				{ label: 'Documentation Home', link: '/docs' },
 				{
 					label: 'About',
+					collapsed: false,
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'What is OpenDAoC', link: '/docs/what-is-opendaoc/' },
@@ -30,6 +31,7 @@ export default defineConfig({
 				},
 				{
 					label: 'Core',
+					collapsed: false,
 					items: [
 						{ label: 'Getting Started', link: '/docs/core/getting-started/' },
 						{ label: 'Docker Setup', link: '/docs/core/docker-setup/' },
@@ -39,19 +41,25 @@ export default defineConfig({
 				},
 				{ label: 'Database', link: '/docs/database' },
 				{ label: 'Client', link: '/docs/client' },
-				{ 
-					label: 'Launcher',
-					collapsed: true,
-					autogenerate: { directory: 'launcher' },
-				},
 				{
 					label: 'Account Manager',
-					collapsed: true,
-					autogenerate: { directory: 'account-manager' },
+					collapsed: false,
+					items: [
+						{ label: 'Getting Started', link: '/docs/account-manager/getting-started/' },
+						{ label: 'Discord Application', link: '/docs/account-manager/discord-application/'},
+						{ label: 'Docker Setup', link: '/docs/account-manager/docker-setup/' },
+						{ label: 'Manual Setup', link: '/docs/account-manager/manual-setup/' },
+						{ label: 'Personalization', link: '/docs/account-manager/personalization/' },
+					],
 				},
+				// { 
+				// 	label: 'Launcher',
+				// 	collapsed: true,
+				// 	autogenerate: { directory: 'launcher' },
+				// },
 				{
 					label: 'Additional Features',
-					collapsed: true,
+					collapsed: false,
 					items: [
 						{ label: 'Index', link: '/docs/additional-features/' },
 						{ label: 'Bounty System', link: '/docs/additional-features/bounty-system/' },
@@ -73,5 +81,5 @@ export default defineConfig({
 	],
 
 	// Process images with sharp: https://docs.astro.build/en/docs/assets/#using-sharp
-	image: { service: { entrypoint: 'astro/assets/services/sharp' } },
+    image: { service: squooshImageService()},
 });
