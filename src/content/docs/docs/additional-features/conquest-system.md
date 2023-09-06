@@ -36,7 +36,7 @@ To display information relating to this system, we have added a new command: /co
 
 This command will display the following information:
 
-![Conquest System Window](/src/assets/images/additional-features/conquest-system-1.png "Conquest System Window")
+![Conquest System Window](../../../../assets/images/additional-features/conquest-system-1.png "Conquest System Window")
 
 
 1) Information about the active conquest target, including frontier, target, current owner, and nearby players
@@ -58,7 +58,7 @@ If a conquest objective is captured in the second half of the conquest window, t
 - If all keeps of the current tier in the current frontier have been captured, the next target is chosen randomly from among the next tier.
 - If any keeps of the current tier in the current frontier have not been captured, a target is randomly chosen from among them.
 
-![Conquest System - Albion](/src/assets/images/additional-features/conquest-system-2.png "Conquest System - Albion")
-![Conquest System - Midgard](/src/assets/images/additional-features/conquest-system-3.png "Conquest System - Midgard")
-![Conquest System - Hibernia](/src/assets/images/additional-features/conquest-system-4.png "Conquest System - Hibernia")
+![Conquest System - Albion](../../../../assets/images/additional-features/conquest-system-2.png "Conquest System - Albion")
+![Conquest System - Midgard](../../../../assets/images/additional-features/conquest-system-3.png "Conquest System - Midgard")
+![Conquest System - Hibernia](../../../../assets/images/additional-features/conquest-system-4.png "Conquest System - Hibernia")
 
