@@ -1,0 +1,105 @@
+---
+title: Personalization - Account Manager
+description: Instructions for personalizing OpenDAoC's Account Manager.
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+## Personalization
+
+The Account Manager has been designed to be as customizable as possible. Whether you're deploying the Account Manager using Docker or manually, you will need to configure the environment variables before you can use it.
+
+To make it easier to read the variables are presented in categories but you should have one resulting list with all the variables you need to set - see the examples below.
+
+<Tabs>
+    <TabItem label="General">
+        | Setting             | Description                                                                   | Example                             |
+        |---------------------|-------------------------------------------------------------------------------|-------------------------------------|
+        | `SERVER_NAME`       | Name of your server.                                                          | "OpenDAoC"                          |
+        | `SITE_TITLE`        | Title of your site.                                                          | "OpenDAoC \| Account Manager"       |
+        | `SITE_DESCRIPTION`  | Meta description for your site.                                              | "OpenDAoC Account Manager allows you to link your OpenDAoC account to your Discord for easy password recovery." |
+        | `SITE_FOOTER`       | Footer of your site.                                                         | "© 2023 OpenDAoC"                   |
+        | `LOGO_PATH`         | Path to your logo file (relative to the public directory).                   | "/images/mylogo.svg"                 |
+        | `NEXTAUTH_URL`      | URL of your site.                                                            | "https://example.com"               |
+        | `NEXTAUTH_SECRET`   | Used for encryption, ensure it's random. Generated with `openssl rand -hex 16`. | "randomhexstring"                   |
+    </TabItem>
+    <TabItem label="Theme">
+        | Setting                  | Description                                   | Example       |
+        |--------------------------|-----------------------------------------------|---------------|
+        | `THEME_FOREGROUND`       | Foreground color in RGB format.              | "255,255,255" |
+        | `THEME_BACKGROUND_LIGHT` | Light background color in RGB format for the top of the gradient. | "200,200,200" |
+        | `THEME_BACKGROUND_DARK`  | Dark background color in RGB format for the bottom of the gradient. | "50,50,50"   |
+    </TabItem>
+    <TabItem label="Toast">
+        | Setting          | Description                                  | Example |
+        |------------------|----------------------------------------------|---------|
+        | `TOAST_DURATION` | Duration of the toast notification in seconds. | "5"     |
+    </TabItem>
+    <TabItem label="Database">
+        | Setting             | Description      | Example    |
+        |---------------------|------------------|------------|
+        | `DATABASE_HOST`     | Database host.   | "localhost"|
+        | `DATABASE_USER`     | Database user.   | "dbuser"   |
+        | `DATABASE_PASSWORD` | Database password. | "password123" |
+        | `DATABASE_NAME`     | Database name.   | "mydatabase"|
+    </TabItem>
+    <TabItem label="Discord">
+        | Setting                 | Description          | Example     |
+        |-------------------------|----------------------|-------------|
+        | `DISCORD_CLIENT_ID`     | Discord client ID.   | "1234567890"|
+        | `DISCORD_CLIENT_SECRET` | Discord client secret. | "abcdef1234"|
+    </TabItem>
+</Tabs>
+
+### Docker Example
+
+In your `docker-compose.yml` file, add the following `environment` section to the `account-manager` service:
+
+```yml  
+environment:
+    - SERVER_NAME: OpenDAoC
+    - SITE_TITLE: OpenDAoC | Account Manager
+    - SITE_DESCRIPTION: OpenDAoC Account Manager allows you to link your OpenDAoC account to your Discord for easy password recovery.
+    - SITE_FOOTER: OpenDAoC Account Manager
+    - LOGO_PATH: /logo.svg
+    - THEME_FOREGROUND: 0, 0, 0
+    - THEME_BACKGROUND_LIGHT: 8, 38, 80
+    - THEME_BACKGROUND_DARK: 2, 7, 19
+    - TOAST_DURATION: 8
+    - DATABASE_HOST: your_database_host
+    - DATABASE_USER: your_database_user
+    - DATABASE_PASSWORD: your_database_password
+    - DATABASE_NAME: your_database_name
+    - MIN_PASSWORD_LENGTH: 6
+    - MAX_PASSWORD_LENGTH: 12
+    - DISCORD_CLIENT_ID: your_discord_client_id
+    - DISCORD_CLIENT_SECRET: your_discord_client_secret
+    - NEXTAUTH_URL: http://localhost:3000
+    - NEXTAUTH_SECRET: change-me-please-123456789012
+```
+
+### .env.production Example
+
+Replace the content of the `.env.production` file with the following and fill in the values:
+
+```env
+SERVER_NAME=OpenDAoC
+SITE_TITLE=OpenDAoC | Account Manager
+SITE_DESCRIPTION=OpenDAoC Account Manager allows you to link your OpenDAoC account to your Discord for easy password recovery.
+SITE_FOOTER=OpenDAoC Account Manager
+LOGO_PATH=/logo.svg
+THEME_FOREGROUND=0, 0, 0
+THEME_BACKGROUND_LIGHT=8, 38, 80
+THEME_BACKGROUND_DARK=2, 7, 19
+TOAST_DURATION=8
+DATABASE_HOST=your_database_host
+DATABASE_USER=your_database_user
+DATABASE_PASSWORD=your_database_password
+DATABASE_NAME=your_database_name
+MIN_PASSWORD_LENGTH=6
+MAX_PASSWORD_LENGTH=12
+DISCORD_CLIENT_ID=your_discord_client_id
+DISCORD_CLIENT_SECRET=your_discord_client_secret
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=change-me-please-123456789012
+```

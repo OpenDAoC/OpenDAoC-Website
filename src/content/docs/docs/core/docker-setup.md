@@ -1,5 +1,5 @@
 ---
-title: Docker Setup
+title: Docker Setup - OpenDAoC
 description: Instructions for getting started with OpenDAoC with Docker.
 ---
 
@@ -8,7 +8,7 @@ description: Instructions for getting started with OpenDAoC with Docker.
 While the Docker container can be run on any platform that supports Docker, we will assume that you are running Docker on a Debian based Linux distribution such as Ubuntu.
 :::
 
-### Prerequisites
+## Prerequisites
 
 To run the OpenDAoC Docker container you will need to have Docker and Docker Compose installed on your system.  
 For instructions on how to install Docker and Docker Compose on your system, please see the [Docker documentation][1].  
@@ -17,7 +17,7 @@ For instructions on how to install Docker and Docker Compose on your system, ple
 While not required, we suggest installing [Portainer CE][2] to manage your Docker containers.  
 :::
 
-### Docker Compose
+## Docker Compose
 
 OpenDAoC requires a MySQL database to store all persistent data.  
 The easiest way to get the OpenDAoC image up and running with a paired DB container is to use a `docker-compose` file to create the required stack.

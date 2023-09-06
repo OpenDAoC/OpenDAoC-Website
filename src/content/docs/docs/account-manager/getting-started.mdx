@@ -1,0 +1,39 @@
+---
+title: Getting Started - Account Manager
+description: Instructions for getting started with OpenDAoC's account management system.
+tableOfContents: false
+---
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+
+The OpenDAoC account manager is a web application that allows your players to create and manage their accounts using their Discord account.  
+It is built using the [Next.js](https://nextjs.org) framework, and is designed to be fully customizable.
+
+As always, we recommend the use of Docker for deployment, but you can also set up the account manager manually if you prefer.  
+The source is available on [GitHub][1] and a live demo is available at [account.opendaoc.com][2].
+
+![Screenshot of the account manager](/src/assets/images/account-manager/screenshot.png "OpenDAoC Account Manager")
+
+<LinkCard 
+  title="Creating a Discord OAuth application" 
+  description="Start here if you haven't already created a Discord OAuth application"
+  href="../discord-application/" />
+<CardGrid>
+	<LinkCard 
+  title="Docker Setup" 
+  description="Step-by-step instructions for setting up the Account Manager using Docker"
+  href="../docker-setup/"
+  />
+	<LinkCard 
+  title="Manual Setup" 
+  description="Step-by-step instructions for setting up the Account Manager manually"
+  href="../manual-setup/" />
+</CardGrid>
+<LinkCard 
+  title="Personalization"
+  description="How to customize the Account Manager to fit your server"
+  href="../personalization/" />
+
+
+
+[1]: https://github.com/OpenDAoC/OpenDAoC-AccountManager
+[2]: https://account.opendaoc.com

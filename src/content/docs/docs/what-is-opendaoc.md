@@ -1,6 +1,7 @@
 ---
 title: What is OpenDAoC?
 description: A brief introduction to OpenDAoC.
+tableOfContents: false
 ---
 
 OpenDAoC is a .Net 6.0 application that emulates a DAoC server.  
