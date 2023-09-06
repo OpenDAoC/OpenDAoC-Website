@@ -47,15 +47,15 @@ Kill Dragon **10** times:
 Dragonsworn Helm/Chest cosmetics unlocked
 Basic Dragonsworn Cloaks unlocked
 
-![Dragon Rewards](/src/assets/images/additional-features/cosmetics-1.png "Dragon Rewards")
+![Dragon Rewards](../../../../assets/images/additional-features/cosmetics-1.png "Dragon Rewards")
 
 Kill Dragon **25** times:
 Dragonsworn Weapon/Ornate Cloak cosmetics unlocked
 Full suit of realm-specific dragonsworn armor unlocked
 Vanity pet of realm-dragon
 
-![Dragon Rewards 25](/src/assets/images/additional-features/cosmetics-2.png "Dragon Rewards 25")
-![Dragon Rewards 25](/src/assets/images/additional-features/cosmetics-3.png "Dragon Rewards 25")
+![Dragon Rewards 25](../../../../assets/images/additional-features/cosmetics-2.png "Dragon Rewards 25")
+![Dragon Rewards 25](../../../../assets/images/additional-features/cosmetics-3.png "Dragon Rewards 25")
 
 ---
 ### Epic Dungeons
@@ -73,8 +73,8 @@ Kill Dungeon Boss **25** times:
 Astral weapon cosmetics unlocked (adze (hib)/dwarven axes (mid)/duelists rapier(alb) for example)
 Vanity pet of realm-boss (Apocalypse for example)
 
-![Epic Dungeons Rewards](/src/assets/images/additional-features/cosmetics-4.png "Epic Dungeons Rewards")
-![Epic Dungeons Rewards](/src/assets/images/additional-features/cosmetics-5.png "Epic Dungeons Rewards")
+![Epic Dungeons Rewards](../../../../assets/images/additional-features/cosmetics-4.png "Epic Dungeons Rewards")
+![Epic Dungeons Rewards](../../../../assets/images/additional-features/cosmetics-5.png "Epic Dungeons Rewards")
 
 ### Crafting
 Get **one craft to 1000**:
@@ -89,7 +89,7 @@ Get **three crafts to 1000**:
 Get **all crafts to 1000**:
 TBD
 
-![Crafting Rewards](/src/assets/images/additional-features/cosmetics-6.png "Crafting Rewards")
+![Crafting Rewards](../../../../assets/images/additional-features/cosmetics-6.png "Crafting Rewards")
 
 ### Orbs Earned
 **100k** orbs accumulated
