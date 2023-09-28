@@ -159,7 +159,7 @@ Building the server can take a while, be patient!
 ## Launching the Server
 
 1. Navigate to the `/home/opendaoc/OpenDAoC-Core/` directory
-2. Run `dotnet run --project DOLServer`
+2. Run `dotnet run --project CoreServer`
 
 :::tip
 You will need to forward the ports (`10300` and `10301` by default) for the server to be accessible outside of your network.
