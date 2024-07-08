@@ -11,9 +11,9 @@ When we started this project, we wanted to create a server that would be able to
 
 We started working off the [Dawn of Light][1] package - a great piece of software that bootstrapped our journey but almost immediately showed its limitations in supporting more than a few handfuls of players.
 
-Working off that codebase, we've spent the past year refactoring the core pieces: introducing the gameloop, reworking event driven systems to instead use entity/component architecture, removing the 'good enough' combat formulas and ensuring parity with accepted data, and filling an entire game world with NPCs for our players to enjoy.
+Working off that codebase, we've spent the past year refactoring the core pieces: introducing the game loop, reworking event driven systems to instead use entity/component architecture, removing the 'good enough' combat formulas and ensuring parity with accepted data, and filling an entire game world with NPCs for our players to enjoy.
 
-We strive to provide a stable, performant, and accurate server that can support thousands of players and we have spent collectively thousands of hours working towards that goal, either developing or finding sources of truth for the data we need.
+We strive to provide a stable, performant, and accurate server that can support thousands of players, and we have spent collectively thousands of hours working towards that goal, either developing or finding sources of truth for the data we need.
 
 As mentioned, our goal was to provide a platform to support the DAoC freeshard ecosystem's longevity moving forward.
 

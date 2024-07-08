@@ -11,12 +11,12 @@ Welcome to the OpenDAoC API documentation. This API provides information about v
 
 ## Base URL
 
-To enable the APIs, you will need to set the `ATLAS_API` serverproperty to `true`.  
+To enable the APIs, you will need to set the `ATLAS_API` server property to `true`.  
 This will enable the API server on port `:5000` at the next server reboot.
 
 :::tip[Exposing Ports and Custom Domains]
 Remember to expose port `5000` on the machine running the server.  
-Additionally, you can setup a reverse proxy to point `api.your-custom-domain.com` to your API endpoint.
+Additionally, you can set up a reverse proxy to point `api.your-custom-domain.com` to your API endpoint.
 :::
 
 ## Endpoints
