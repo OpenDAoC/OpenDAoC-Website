@@ -3,7 +3,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://new.opendaoc.com',
+	site: 'https://www.opendaoc.com',
 	integrations: [
 		starlight({
 			title: 'OpenDAoC',
