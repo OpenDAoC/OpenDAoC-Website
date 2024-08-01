@@ -4,7 +4,8 @@ description: A brief introduction to OpenDAoC.
 tableOfContents: false
 ---
 
-OpenDAoC is a .Net 6.0 application that emulates a DAoC server.  
+OpenDAoC is a free and open-source server emulator for the MMORPG Dark Age of Camelot.
+
 OpenDAOC is provided as source code and can be compiled and run on Windows or Linux. It is also provided as a Docker container that can be run on any platform that supports Docker.
 
 Originally, we were a fork of the [Dawn of Light][1] project, and it was known as Atlas.  
