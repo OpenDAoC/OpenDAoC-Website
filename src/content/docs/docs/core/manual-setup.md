@@ -106,7 +106,7 @@ To create the user and database, perform the following steps from the Terminal:
 ## Cloning the Repository
 
 The OpenDAoC repository can be cloned from [GitHub][3].  
-In this example, we will be cloning "OpenDAoC-Core" to the "/home/opendaoc/OpenDAoC-Core" directory.
+In this example, we will be cloning `OpenDAoC-Core` to the `/home/opendaoc/OpenDAoC-Core` directory.
 
 To clone the repository, run the following command from the Terminal:
 
