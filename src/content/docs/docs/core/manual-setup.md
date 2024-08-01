@@ -31,22 +31,22 @@ sudo apt-get update && \
 sudo apt-get install -y git
 ```
 
-### Installing .NET 6.0 SDK
+### Installing .NET SDK
 
-OpenDAoC is a .Net 6.0 application and requires the .Net 6.0 SDK to be installed on your system.
+OpenDAoC is a .NET application and requires the .NET SDK to be installed on your system.
 
-If you are running a Debian based Linux distribution such as Ubuntu, you can install the .Net 6.0 SDK by running the following commands:
+If you are running a Debian based Linux distribution such as Ubuntu or Debian, you can install the SDK by running the following commands from the Terminal:
 
 ```bash
 sudo apt-get update && \
-sudo apt-get install -y dotnet-sdk-6.0
+sudo apt-get install -y dotnet-sdk-8.0
 ```
 
-Please see the [Microsoft documentation][2] for instructions on how to install the .Net 6.0 SDK on other platforms.
+Please see [Microsoft's documentation][2] for instructions on how to install the .NET SDK on other platforms.
 
 ### Installing MariaDB
 
-MariaDB is an open-source relational database management system (RDBMS). OpenDAoC specifically utilizes v10.5.
+MariaDB is an open-source relational database management system (RDBMS). OpenDAoC has been tested with MariaDB up to version 10.6.
 
 Perform the following steps from the Terminal:
 
@@ -106,7 +106,7 @@ To create the user and database, perform the following steps from the Terminal:
 ## Cloning the Repository
 
 The OpenDAoC repository can be cloned from [GitHub][3].  
-In this example, we will be cloning "OpenDAoC-Core" to the "/home/opendaoc/OpenDAoC-Core" directory.
+In this example, we will be cloning `OpenDAoC-Core` to the `/home/opendaoc/OpenDAoC-Core` directory.
 
 To clone the repository, run the following command from the Terminal:
 
@@ -116,6 +116,13 @@ git clone https://github.com/OpenDAoC/OpenDAoC-Core.git
 ```
 
 ## Populating the Database
+
+The database needs to be populated with the required tables and data before the server can be run.  
+We provide both a `DummyDB.sql` file with just the tables and the full OpenDAoC DB dump.
+
+Using the `DummyDB.sql` file is only recommended if you plan using your own data or if you are familiar with the OpenDAoC database structure.
+
+### Using the DummyDB.sql file
 
 The database needs to be populated with the required tables and data with the provided `DummyDB.sql` file before the server can be run.
 
