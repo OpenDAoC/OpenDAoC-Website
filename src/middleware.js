@@ -6,7 +6,7 @@ export const onRequest = async (context, next) => {
   const modifiedHtml = html.replace(
     '</head>',
     `
-    <script defer data-domain="opendaoc.com" src="https://pl.clait.sh/js/script.js"></script>
+    <script defer src="https://u.clait.sh/script.js" data-website-id="43a955c1-9654-48cb-9ebe-551f83a42340"></script>
     </head>
     `
   );
