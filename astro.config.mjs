@@ -1,4 +1,4 @@
-import { defineConfig, squooshImageService } from 'astro/config';
+import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
@@ -13,10 +13,10 @@ export default defineConfig({
 				src: './src/assets/Logo.svg',
 			},
 			favicon: './favicon.svg',
-			social: {
-				github: 'https://github.com/OpenDAoC',
-				discord: 'https://discord.gg/RHqzyt8KyC',
-			},
+			social: [
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/OpenDAoC' },
+				{ icon: 'discord', label: 'Discord', href: 'https://discord.gg/RHqzyt8KyC' },
+			],
 			sidebar: [
 				{ label: 'Home', link: '/' },
 				{ label: 'Documentation Home', link: '/docs' },
@@ -79,7 +79,4 @@ export default defineConfig({
 			],
 		}),
 	],
-
-	// Process images with sharp: https://docs.astro.build/en/docs/assets/#using-sharp
-    image: { service: squooshImageService()},
 });
